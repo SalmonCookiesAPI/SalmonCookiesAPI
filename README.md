@@ -20,7 +20,7 @@ This site is meant to be used as an API, with requests made by a seperate site. 
 ## Contributors & Contact
 Created By
 - [Benjamin Ibarra](https://www.linkedin.com/in/ibarraben/)
-- [Ben Arno](www.linkedin.com/in/ben-arno)
+- [Ben Arno](https://www.linkedin.com/in/ben-arno)
 - [Charles Bofferding](https://www.linkedin.com/in/charles-bofferding/)
 - [Joshua Haddock](https://www.linkedin.com/in/joshuahaddock/)
 - [Miriam Silva](https://www.linkedin.com/in/mirmsilva/)
