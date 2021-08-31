@@ -32,7 +32,7 @@ namespace SalmonCookiesAPI
             services.AddDbContext<CookieDbContext>(options =>
             {
                 string connectionString = Configuration.GetConnectionString("DefaultConnection");
-                options.UseSqlServer(connectionString);
+                options.UseSqlServer("Server=tcp:cookie-store-server.database.windows.net,1433;Initial Catalog=Cookie_Store_Db;Persist Security Info=False;User ID=cookieboss;Password=C00k!eBoss;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             });
 
             services.AddSwaggerGen(options =>
@@ -74,8 +74,6 @@ namespace SalmonCookiesAPI
             });
 
             app.UseRouting();
-
-/*            app.UseAuthorization();*/
 
             app.UseEndpoints(endpoints =>
             {
