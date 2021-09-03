@@ -11,6 +11,8 @@ This site is an exercise creating an API to return data for Store Locations post
 
 Our API stores this data, and will simulate a days sales by hour upon request.
 
+[erdimg](./images/erd.png)
+
 ## Setup
 
 This site is meant to be used as an API, with requests made by a seperate site. However, with the implementation of Swagger, the user can test making requests to the API, including getting, posting, updating and deleting locations (all standard CRUD operations).
