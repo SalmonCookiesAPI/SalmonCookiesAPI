@@ -30,6 +30,7 @@ namespace SalmonCookiesAPI.Models.Services
             Store store = await _context.Stores.FindAsync(id);
             StoreDTO newStore = new StoreDTO()
                 {
+                    Id = store.Id,
                     Location = store.Location,
                     Description = store.Description,
                     MinimumCustomers = store.MinimumCustomers,
@@ -46,6 +47,7 @@ namespace SalmonCookiesAPI.Models.Services
             List<StoreDTO> stores = await _context.Stores
                 .Select(s => new StoreDTO()
                 {
+                    Id = s.Id,
                     Location = s.Location,
                     Description = s.Description,
                     MinimumCustomers = s.MinimumCustomers,

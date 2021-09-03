@@ -7,6 +7,7 @@ namespace SalmonCookiesAPI.Models.DTOs
 {
     public class StoreDTO
     {
+        public int Id { get; set; }
         public string Location { get; set; }
         public string Description { get; set; }
         public int MinimumCustomers { get; set; }
