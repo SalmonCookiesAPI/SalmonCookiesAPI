@@ -32,8 +32,7 @@ namespace SalmonCookiesAPI
             services.AddDbContext<CookieDbContext>(options =>
             {
                 string connectionString = Configuration.GetConnectionString("DefaultConnection");
-                //TODO: Figure out why this connection string business only works localAPI->Deployed Database
-                options.UseSqlServer("Server=tcp:cookie-store-server.database.windows.net,1433;Initial Catalog=Cookie_Store_Db;Persist Security Info=False;User ID=cookieboss;Password=C00k!eBoss;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+                options.UseSqlServer(connectionString);
             });
 
             services.AddSwaggerGen(options =>
